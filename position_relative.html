@@ -1,0 +1,37 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <style>
+        html{
+            border:1px solid gray;
+        }
+        div{
+            border:10px solid tomato;
+            margin: 10px;
+        }
+        #me{
+/* left=오른쪽으로 px만큼 움직임,
+top=윗쪽을 기점으로 px만큼 움직임,
+right=왼쪽으로 px만큼 움직임
+bottom=아래쪽을 기점으로 px만큼 움직임,
+얘들만 적어서 움직이지 않음, 위치를 relative로 해주어야 함.*/
+/* relative를 지정해주지 않으면 me가 움직이지 않는 이유는
+position의 기본값이 static 즉 정적으로 되어있기 때문이다. */
+            position: relative;
+            left:100px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>

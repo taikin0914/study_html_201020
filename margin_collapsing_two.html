@@ -1,0 +1,29 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <style>
+        #parent{
+/* parent tag에 border을 주석 처리하면 child의 위치가
+이동된다. 이는 parent와 child의 margin 값이 합쳐지기 때문.
+이를 margin 겹침으로 보면 된다. */
+            /* border:1px solid tomato; */
+            margin-top:100px;
+        }
+        #child{
+            background-color: powderblue;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            Saranghae
+        </div>
+    </div>
+</body>
+</html>
